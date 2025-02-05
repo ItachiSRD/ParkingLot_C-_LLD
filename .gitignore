@@ -1,0 +1,14 @@
+# Ignore object files
+*.o
+
+# Optionally ignore the executable
+ParkingLot
+
+# Ignore build artifacts
+*.exe
+*.out
+
+# Ignore editor and OS specific files
+.vscode/
+*.swp
+.DS_Store
