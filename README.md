@@ -2,6 +2,9 @@
 
 **ParkingLot** is a C++ command-line application that simulates a parking lot. It allows you to create a parking lot, park cars, remove parked cars, and query the parking lot status through various commands. The project is designed using object-oriented principles and provides clear separation of concerns with components for commands, exceptions, models, modes, services, and validation.
 
+### Problem Statement
+https://github.com/anomaly2104/lld-parking-lot/blob/master/problem-statment.md
+
 ## Features
 
 - **Create Parking Lot:** Initialize a parking lot with a specified number of slots.
