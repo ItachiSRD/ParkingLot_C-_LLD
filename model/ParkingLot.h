@@ -23,7 +23,7 @@ public:
     explicit ParkingLot(int capacity);
 
     // Getters
-    int getCapacity() const;
+    int getCapacity();
     const std::unordered_map<int, std::shared_ptr<Slot>>& getSlots() const;
 
     // Parks a car in a given slot number

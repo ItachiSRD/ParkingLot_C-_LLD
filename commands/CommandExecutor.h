@@ -21,8 +21,7 @@ public:
      * @param service Shared pointer to the parking lot service.
      * @param printer Shared pointer to the output printer.
      */
-    CommandExecutor(std::shared_ptr<ParkingLotService> service, std::shared_ptr<OutputPrinter> printer)
-        : parkingLotService(service), outputPrinter(printer) {}
+    CommandExecutor(std::shared_ptr<ParkingLotService> service, std::shared_ptr<OutputPrinter> printer);
 
     /**
      * Virtual destructor for the base class to ensure proper cleanup of derived objects.

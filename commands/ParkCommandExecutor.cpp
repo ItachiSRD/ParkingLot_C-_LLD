@@ -1,6 +1,6 @@
 #include "ParkCommandExecutor.h"
 #include "../exception/NoFreeSlotAvailableException.h"
-const std::string ParkCommandExecutor::COMMAND_NAME = "park_command";
+const std::string ParkCommandExecutor::COMMAND_NAME = "park";
 
 ParkCommandExecutor::ParkCommandExecutor(std::shared_ptr<ParkingLotService> parkingLotService, std::shared_ptr<OutputPrinter> outputPrinter)
 :CommandExecutor(parkingLotService, outputPrinter)

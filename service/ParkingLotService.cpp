@@ -8,14 +8,14 @@ void ParkingLotService::validateParkingLotExists() const
     }
 }
 
-void ParkingLotService::createParkingLot(std::unique_ptr<ParkingLot> lot, std::unique_ptr<ParkingStrategy> strategy)
+void ParkingLotService::createParkingLot(std::shared_ptr<ParkingLot> lot, std::shared_ptr<ParkingStrategy> strategy)
 {
     if (parkingLot)
     {
         throw std::runtime_error("Parking lot already exists.");
     }
-    parkingLot = std::move(lot);
-    parkingStrategy = std::move(strategy);
+    parkingLot = (lot);
+    parkingStrategy = (strategy);
 
     for (int i = 1; i <= parkingLot->getCapacity(); i++)
     {

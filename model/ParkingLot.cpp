@@ -8,8 +8,8 @@ ParkingLot::ParkingLot(int capacity) : capacity(capacity) {
 }
 
 // Getter for the capacity of the parking lot
-int ParkingLot::getCapacity() const {
-    return capacity;
+int ParkingLot::getCapacity() {
+    return this->capacity;
 }
 
 // Getter for the slots map

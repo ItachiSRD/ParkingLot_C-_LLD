@@ -3,6 +3,7 @@
 
 # Optionally ignore the executable
 ParkingLot
+CMakeLists.txt
 
 # Ignore build artifacts
 *.exe

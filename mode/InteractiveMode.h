@@ -11,8 +11,7 @@
 class InteractiveMode : public Mode {
 public:
     InteractiveMode(std::shared_ptr<CommandExecutorFactory> commandExecutorFactory,
-                    std::shared_ptr<OutputPrinter> outputPrinter)
-        : Mode(commandExecutorFactory, outputPrinter) {}
+                    std::shared_ptr<OutputPrinter> outputPrinter);
 
     /**
      * Processes the interactive shell mode, reading commands from the console

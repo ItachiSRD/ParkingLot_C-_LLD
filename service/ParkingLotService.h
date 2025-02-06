@@ -15,13 +15,13 @@
 class ParkingLotService
 {
 private:
-    std::unique_ptr<ParkingLot> parkingLot;
-    std::unique_ptr<ParkingStrategy> parkingStrategy;
+    std::shared_ptr<ParkingLot> parkingLot;
+    std::shared_ptr<ParkingStrategy> parkingStrategy;
 
     void validateParkingLotExists() const;
 
 public:
-    void createParkingLot(std::unique_ptr<ParkingLot> lot, std::unique_ptr<ParkingStrategy> strategy);
+    void createParkingLot(std::shared_ptr<ParkingLot> lot, std::shared_ptr<ParkingStrategy> strategy);
 
     int park(const std::shared_ptr<Car> &car);
 

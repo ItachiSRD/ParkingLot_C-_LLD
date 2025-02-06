@@ -3,7 +3,7 @@
 
 #include "CommandExecutor.h"
 #include "../service/ParkingLotService.h"
-#include "OutputPrinter.h"
+#include "../OutputPrinter.h"
 #include "../model/Command.h"
 #include "../exception/InvalidCommandException.h"
 #include <memory>

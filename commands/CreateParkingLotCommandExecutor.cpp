@@ -19,8 +19,8 @@ bool CreateParkingLotCommandExecutor::validate(const Command& command) {
 
 void CreateParkingLotCommandExecutor::execute(const Command& command) {
     int parkingLotCapacity = std::stoi(command.getParams()[0]);
-    auto parkingLot = std::make_unique<ParkingLot>(parkingLotCapacity);
-    parkingLotService->createParkingLot(std::move(parkingLot), std::move(std::make_unique<NaturalOrderingParkingStrategy>()));
+    auto parkingLot = std::make_shared<ParkingLot>(parkingLotCapacity);
+    parkingLotService->createParkingLot(parkingLot, std::make_shared<NaturalOrderingParkingStrategy>());
     outputPrinter->printWithNewLine(
         "Created a parking lot with " + std::to_string(parkingLot->getCapacity()) + " slots");
 }
